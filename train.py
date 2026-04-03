@@ -31,6 +31,7 @@ print(f"Accuracy: {accuracy:.4f}")
 print(f"AUC-ROC: {auc:.4f}")
 
 # Save model
+os.makedirs("models", exist_ok=True)
 with open('models/churn_model.pkl', 'wb') as f:
     pickle.dump(model, f)
 
