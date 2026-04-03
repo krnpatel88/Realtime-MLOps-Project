@@ -4,6 +4,7 @@ import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, roc_auc_score
+import os
 
 # Load data
 df = pd.read_csv('data/churn_data.csv')
